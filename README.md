@@ -2,7 +2,7 @@
 
 See http://eslint.org/docs/rules/ for more information.
 
-This package enables errors on all of the avalible flags except the following:
+This package enables errors on all of the available flags except the following:
 
 | Flag | Description | Value |
 |------|-------------|--------|
