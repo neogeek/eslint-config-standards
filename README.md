@@ -30,6 +30,36 @@ This package enables errors on all of the available flags except the following:
 | one-var | Enforce variables to be declared either together or separately in functions | `0` |
 | quotes | Enforce the consistent use of either backticks, double, or single quotes | `[2, "single"]` |
 
+## Sample .eslintrc
+
+```json
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "./config/eslint-coding-standards/.eslintrc-best-practice",
+    "./config/eslint-coding-standards/.eslintrc-es6",
+    "./config/eslint-coding-standards/.eslintrc-nodejs-commonjs",
+    "./config/eslint-coding-standards/.eslintrc-possible-errors",
+    "./config/eslint-coding-standards/.eslintrc-stylistic",
+    "./config/eslint-coding-standards/.eslintrc-variables"
+  ],
+  "rules": {
+    "valid-jsdoc": 2
+  }
+}
+```
+
 ## Updating Rules from <http://eslint.org/docs/rules/>
 
 Run the following code snippet from the console before copying the rules.
