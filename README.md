@@ -9,6 +9,7 @@ This package enables errors on all of the available flags except the following:
 | dot-location | Enforce consistent newlines before and after dots | `0` |
 | max-len | Enforce a maximum line length | `[1, 100, 4, {"ignoreComments": true}]` |
 | max-lines | Enforce a maximum file length | `0` |
+| no-magic-number | Disallow Magic Numbers | `[2, { "ignore": [0, 1] }]` |
 | no-process-env | Disallow the use of `process.env` | `0` |
 | no-process-exit | Disallow the use of `process.exit()` | `0` |
 | object-curly-newline | Enforce consistent line breaks inside braces | `0` |
