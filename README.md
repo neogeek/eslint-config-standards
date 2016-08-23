@@ -36,7 +36,7 @@ This package enables errors on all of the available flags except the following:
 $ npm install eslint @neogeek/eslint-config-standards --save-dev
 ```
 
-## Sample .eslintrc Configurations=
+## Sample `.eslintrc` Configurations
 
 ```json
 {
