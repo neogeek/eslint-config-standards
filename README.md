@@ -1,4 +1,4 @@
-# ESLint Coding Standards
+# ESLint Config Standards
 
 See http://eslint.org/docs/rules/ for more information.
 
