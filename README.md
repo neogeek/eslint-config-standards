@@ -88,11 +88,3 @@ $ npm install eslint @neogeek/eslint-config-standards --save-dev
   }
 }
 ```
-
-## Updating Rules from <http://eslint.org/docs/rules/>
-
-Run the following code snippet from the console before copying the rules.
-
-```javascript
-$('.rule-list tr td:not(:nth-of-type(3))').remove();
-```
