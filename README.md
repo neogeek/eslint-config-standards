@@ -49,7 +49,6 @@ $ npm install eslint @neogeek/eslint-config-standards --save-dev
 ```json
 {
   "extends": [
-    "@neogeek/eslint-config-standards",
     "@neogeek/eslint-config-standards/.eslintrc-best-practice",
     "@neogeek/eslint-config-standards/.eslintrc-es6",
     "@neogeek/eslint-config-standards/.eslintrc-nodejs-commonjs",
