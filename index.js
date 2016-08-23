@@ -13,7 +13,6 @@ module.exports = {
         loadConfigFile('.eslintrc-es6').rules,
         loadConfigFile('.eslintrc-nodejs-commonjs').rules,
         loadConfigFile('.eslintrc-possible-errors').rules,
-        loadConfigFile('.eslintrc-strict').rules,
         loadConfigFile('.eslintrc-stylistic').rules,
         loadConfigFile('.eslintrc-variables').rules
     )
