@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "eslint:recommended",
+    ".eslintrc-best-practice",
+    ".eslintrc-es6",
+    ".eslintrc-nodejs-commonjs",
+    ".eslintrc-possible-errors",
+    ".eslintrc-stylistic",
+    ".eslintrc-variables"
+  ]
+}
