@@ -30,6 +30,12 @@ This package enables errors on all of the available flags except the following:
 | one-var | Enforce variables to be declared either together or separately in functions | `0` |
 | quotes | Enforce the consistent use of either backticks, double, or single quotes | `[2, "single"]` |
 
+## Install
+
+```bash
+$ npm install eslint @neogeek/eslint-config-standards --save-dev
+```
+
 ## Sample .eslintrc Configurations=
 
 ```json
