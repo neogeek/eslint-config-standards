@@ -30,7 +30,30 @@ This package enables errors on all of the available flags except the following:
 | one-var | Enforce variables to be declared either together or separately in functions | `0` |
 | quotes | Enforce the consistent use of either backticks, double, or single quotes | `[2, "single"]` |
 
-## Sample .eslintrc
+## Sample .eslintrc Configurations=
+
+```json
+{
+  "extends": [
+    "@neogeek/eslint-config-standards"
+  ]
+}
+```
+
+```json
+{
+  "extends": [
+    "@neogeek/eslint-config-standards",
+    "@neogeek/eslint-config-standards/.eslintrc-best-practice",
+    "@neogeek/eslint-config-standards/.eslintrc-es6",
+    "@neogeek/eslint-config-standards/.eslintrc-nodejs-commonjs",
+    "@neogeek/eslint-config-standards/.eslintrc-possible-errors",
+    "@neogeek/eslint-config-standards/.eslintrc-strict",
+    "@neogeek/eslint-config-standards/.eslintrc-stylistic",
+    "@neogeek/eslint-config-standards/.eslintrc-variables"
+  ]
+}
+```
 
 ```json
 {
@@ -46,13 +69,14 @@ This package enables errors on all of the available flags except the following:
     "es6": true
   },
   "extends": [
-    "eslint:recommended",
-    "./config/eslint-coding-standards/.eslintrc-best-practice",
-    "./config/eslint-coding-standards/.eslintrc-es6",
-    "./config/eslint-coding-standards/.eslintrc-nodejs-commonjs",
-    "./config/eslint-coding-standards/.eslintrc-possible-errors",
-    "./config/eslint-coding-standards/.eslintrc-stylistic",
-    "./config/eslint-coding-standards/.eslintrc-variables"
+    "@neogeek/eslint-config-standards",
+    "@neogeek/eslint-config-standards/.eslintrc-best-practice",
+    "@neogeek/eslint-config-standards/.eslintrc-es6",
+    "@neogeek/eslint-config-standards/.eslintrc-nodejs-commonjs",
+    "@neogeek/eslint-config-standards/.eslintrc-possible-errors",
+    "@neogeek/eslint-config-standards/.eslintrc-strict",
+    "@neogeek/eslint-config-standards/.eslintrc-stylistic",
+    "@neogeek/eslint-config-standards/.eslintrc-variables"
   ],
   "rules": {
     "valid-jsdoc": 2

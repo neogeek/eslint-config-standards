@@ -1,4 +1,29 @@
 {
   "name": "@neogeek/eslint-config-standards",
-  "version": "1.0.0"
+  "description": "ESLint Config Standards",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "3.3.1"
+  },
+  "peerDependencies": {
+    "eslint": "3.3.1"
+  },
+  "keywords": [
+    "eslint",
+    "config"
+  ],
+  "authors": [
+    {
+      "name": "Scott Doxey",
+      "email": "hello@scottdoxey.com",
+      "homepage": "http://scottdoxey.com/"
+    }
+  ],
+  "homepage": "https://github.com/neogeek/eslint-config-standards",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/neogeek/eslint-config-standards.git"
+  }
 }
