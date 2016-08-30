@@ -1,3 +1,5 @@
+[![NPM Version](https://img.shields.io/npm/v/@neogeek/eslint-config-standards.svg?style=flat)](https://www.npmjs.org/package/@neogeek/eslint-config-standards)
+
 # ESLint Config Standards
 
 See http://eslint.org/docs/rules/ for more information.
