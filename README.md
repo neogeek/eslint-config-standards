@@ -49,12 +49,12 @@ $ npm install eslint @neogeek/eslint-config-standards --save-dev
 ```json
 {
   "extends": [
-    "@neogeek/eslint-config-standards/.eslintrc-best-practice",
-    "@neogeek/eslint-config-standards/.eslintrc-es6",
-    "@neogeek/eslint-config-standards/.eslintrc-nodejs-commonjs",
+    "@neogeek/eslint-config-standards/.eslintrc-best-practices",
+    "@neogeek/eslint-config-standards/.eslintrc-ecmascript-6",
+    "@neogeek/eslint-config-standards/.eslintrc-nodejs-and-commonjs",
     "@neogeek/eslint-config-standards/.eslintrc-possible-errors",
-    "@neogeek/eslint-config-standards/.eslintrc-strict",
-    "@neogeek/eslint-config-standards/.eslintrc-stylistic",
+    "@neogeek/eslint-config-standards/.eslintrc-strict-mode",
+    "@neogeek/eslint-config-standards/.eslintrc-stylistic-issues",
     "@neogeek/eslint-config-standards/.eslintrc-variables"
   ]
 }
@@ -74,13 +74,12 @@ $ npm install eslint @neogeek/eslint-config-standards --save-dev
     "es6": true
   },
   "extends": [
-    "@neogeek/eslint-config-standards",
-    "@neogeek/eslint-config-standards/.eslintrc-best-practice",
-    "@neogeek/eslint-config-standards/.eslintrc-es6",
-    "@neogeek/eslint-config-standards/.eslintrc-nodejs-commonjs",
+    "@neogeek/eslint-config-standards/.eslintrc-best-practices",
+    "@neogeek/eslint-config-standards/.eslintrc-ecmascript-6",
+    "@neogeek/eslint-config-standards/.eslintrc-nodejs-and-commonjs",
     "@neogeek/eslint-config-standards/.eslintrc-possible-errors",
-    "@neogeek/eslint-config-standards/.eslintrc-strict",
-    "@neogeek/eslint-config-standards/.eslintrc-stylistic",
+    "@neogeek/eslint-config-standards/.eslintrc-strict-mode",
+    "@neogeek/eslint-config-standards/.eslintrc-stylistic-issues",
     "@neogeek/eslint-config-standards/.eslintrc-variables"
   ],
   "rules": {

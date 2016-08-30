@@ -9,11 +9,11 @@ const loadConfigFile = (filename) =>
 module.exports = {
     'rules': Object.assign(
         {},
-        loadConfigFile('.eslintrc-best-practice').rules,
-        loadConfigFile('.eslintrc-es6').rules,
-        loadConfigFile('.eslintrc-nodejs-commonjs').rules,
+        loadConfigFile('.eslintrc-best-practices').rules,
+        loadConfigFile('.eslintrc-ecmascript-6').rules,
+        loadConfigFile('.eslintrc-nodejs-and-commonjs').rules,
         loadConfigFile('.eslintrc-possible-errors').rules,
-        loadConfigFile('.eslintrc-stylistic').rules,
+        loadConfigFile('.eslintrc-stylistic-issues').rules,
         loadConfigFile('.eslintrc-variables').rules
     )
 };

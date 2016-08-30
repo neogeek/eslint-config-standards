@@ -9,11 +9,11 @@
   },
   "extends": [
     "eslint:recommended",
-    ".eslintrc-best-practice",
-    ".eslintrc-es6",
-    ".eslintrc-nodejs-commonjs",
+    ".eslintrc-best-practices",
+    ".eslintrc-ecmascript-6",
+    ".eslintrc-nodejs-and-commonjs",
     ".eslintrc-possible-errors",
-    ".eslintrc-stylistic",
+    ".eslintrc-stylistic-issues",
     ".eslintrc-variables"
   ]
 }
