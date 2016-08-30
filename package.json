@@ -1,7 +1,7 @@
 {
   "name": "@neogeek/eslint-config-standards",
   "description": "ESLint Config Standards",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
