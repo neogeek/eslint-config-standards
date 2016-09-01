@@ -23,7 +23,14 @@
     "linebreak-style": 2,
     "lines-around-comment": 2,
     "max-depth": 2,
-    "max-len": [1, 100, 4, {"ignoreComments": true}],
+    "max-len": [
+      1,
+      100,
+      4,
+      {
+        "ignoreComments": true
+      }
+    ],
     "max-lines": 0,
     "max-nested-callbacks": 2,
     "max-params": 2,
@@ -63,7 +70,10 @@
     "operator-linebreak": 2,
     "padded-blocks": 2,
     "quote-props": 2,
-    "quotes": [2, "single"],
+    "quotes": [
+      2,
+      "single"
+    ],
     "require-jsdoc": 2,
     "semi-spacing": 2,
     "semi": 2,

@@ -2,6 +2,7 @@
 /* eslint arrow-body-style: 0 */
 
 const fs = require('fs');
+const path = require('path');
 
 const cheerio = require('cheerio');
 const request = require('request');
@@ -20,12 +21,14 @@ const parseRulesFromTable = ($body, id) => {
                 .trim()
         );
 
+    const customRules = require(path.join(__dirname, `./mods/eslintrc-${id.replace(/^#/, '')}.json`)).rules;
+
     return {
         'rules': Object.assign({}, ...rules.map((rule) => {
 
             return {[rule]: 2};
 
-        }))
+        }), customRules)
     };
 
 };
