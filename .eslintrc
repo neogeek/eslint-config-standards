@@ -1,11 +1,7 @@
 {
-  "parserOptions": {
-    "ecmaVersion": 6,
-    "sourceType": "module"
-  },
   "env": {
-    "node": true,
-    "es6": true
+    "es6": true,
+    "node": true
   },
   "extends": [
     "eslint:recommended",
@@ -15,5 +11,9 @@
     ".eslintrc-possible-errors",
     ".eslintrc-stylistic-issues",
     ".eslintrc-variables"
-  ]
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  }
 }
