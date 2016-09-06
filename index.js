@@ -7,6 +7,17 @@ const loadConfigFile = (filename) =>
     JSON.parse(fs.readFileSync(path.join(__dirname, filename), 'utf8'));
 
 module.exports = {
+    'env': {
+        'es6': true,
+        'node': true
+    },
+    'parserOptions': {
+        'ecmaFeatures': {
+            'jsx': true
+        },
+        'ecmaVersion': 6,
+        'sourceType': 'module'
+    },
     'rules': Object.assign(
         {},
         loadConfigFile('.eslintrc-best-practices').rules,

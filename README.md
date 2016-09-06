@@ -58,31 +58,6 @@ $ npm install eslint @neogeek/eslint-config-standards --save-dev
     "@neogeek/eslint-config-standards/.eslintrc-strict-mode",
     "@neogeek/eslint-config-standards/.eslintrc-stylistic-issues",
     "@neogeek/eslint-config-standards/.eslintrc-variables"
-  ]
-}
-```
-
-```json
-{
-  "parserOptions": {
-    "ecmaVersion": 6,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
-    }
-  },
-  "env": {
-    "node": true,
-    "es6": true
-  },
-  "extends": [
-    "@neogeek/eslint-config-standards/.eslintrc-best-practices",
-    "@neogeek/eslint-config-standards/.eslintrc-ecmascript-6",
-    "@neogeek/eslint-config-standards/.eslintrc-nodejs-and-commonjs",
-    "@neogeek/eslint-config-standards/.eslintrc-possible-errors",
-    "@neogeek/eslint-config-standards/.eslintrc-strict-mode",
-    "@neogeek/eslint-config-standards/.eslintrc-stylistic-issues",
-    "@neogeek/eslint-config-standards/.eslintrc-variables"
   ],
   "rules": {
     "valid-jsdoc": 2
