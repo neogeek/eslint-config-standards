@@ -1,5 +1,6 @@
-/* eslint no-sync: 0 */
 /* eslint arrow-body-style: 0 */
+/* eslint global-require: 0 */
+/* eslint no-sync: 0 */
 
 const fs = require('fs');
 const path = require('path');
@@ -21,7 +22,9 @@ const parseRulesFromTable = ($body, id) => {
                 .trim()
         );
 
-    const customRules = require(path.join(__dirname, `./mods/eslintrc-${id.replace(/^#/, '')}.json`)).rules;
+    const customRulesFile = path.join(__dirname, `./mods/eslintrc-${id.replace(/^#/, '')}.json`);
+
+    const customRules = require(customRulesFile).rules;
 
     return {
         'rules': Object.assign({}, ...rules.map((rule) => {
