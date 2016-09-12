@@ -6,7 +6,7 @@
   "license": "MIT",
   "devDependencies": {
     "cheerio": "0.22.0",
-    "eslint": "3.4.0",
+    "eslint": "3.5.0",
     "request": "2.74.0"
   },
   "peerDependencies": {
