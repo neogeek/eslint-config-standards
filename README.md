@@ -1,3 +1,4 @@
+[![devDependencies Status](https://david-dm.org/neogeek/eslint-config-standards/dev-status.svg)](https://david-dm.org/neogeek/eslint-config-standards?type=dev)
 [![NPM Version](https://img.shields.io/npm/v/@neogeek/eslint-config-standards.svg?style=flat)](https://www.npmjs.org/package/@neogeek/eslint-config-standards)
 
 # ESLint Config Standards
