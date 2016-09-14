@@ -10,7 +10,7 @@
     "request": "2.74.0"
   },
   "peerDependencies": {
-    "eslint": "3.x"
+    "eslint": "^3.5.x"
   },
   "scripts": {
     "test": "eslint index.js utils/update.js"
