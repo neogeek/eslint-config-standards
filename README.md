@@ -14,7 +14,7 @@ This package enables errors on all of the available flags except the following:
 | Flag | Description | Value |
 |------|-------------|--------|
 | dot-location | Enforce consistent newlines before and after dots | `0` |
-| no-magic-number | Disallow Magic Numbers | `[2, { "ignore": [0, 1] }]` |
+| no-magic-number | Disallow Magic Numbers | `[2, { "ignore": [-1, 0, 1] }]` |
 
 ### Node.js and CommonJS
 
