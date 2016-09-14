@@ -16,6 +16,12 @@ This package enables errors on all of the available flags except the following:
 | dot-location | Enforce consistent newlines before and after dots | `0` |
 | no-magic-number | Disallow Magic Numbers | `[2, { "ignore": [-1, 0, 1] }]` |
 
+### ECMAScript 6
+
+| Flag | Description | Value |
+|------|-------------|--------|
+| arrow-parens | require parentheses around arrow function arguments | `["error", "as-needed"]` |
+
 ### Node.js and CommonJS
 
 | Flag | Description | Value |
