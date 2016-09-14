@@ -17,7 +17,7 @@ const parseRulesFromTable = ($body, id) => {
         .eq(0)
         .find('td:nth-of-type(3)')
         .toArray()
-        .map((rule) =>
+        .map(rule =>
             $body(rule).text()
                 .trim()
         );
@@ -27,7 +27,7 @@ const parseRulesFromTable = ($body, id) => {
     const customRules = require(customRulesFile).rules;
 
     return {
-        'rules': Object.assign({}, ...rules.map((rule) => {
+        'rules': Object.assign({}, ...rules.map(rule => {
 
             return {[rule]: 2};
 
@@ -54,7 +54,7 @@ request('http://eslint.org/docs/rules/', (err, res, body) => {
         '#strict-mode',
         '#stylistic-issues',
         '#variables'
-    ].forEach((id) => fs.writeFileSync(
+    ].forEach(id => fs.writeFileSync(
             `.eslintrc-${id.replace(/^#/, '')}`,
             `${JSON.stringify(parseRulesFromTable($body, id), null, SPACE_SIZE)}\n`
         )
