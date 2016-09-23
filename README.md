@@ -30,6 +30,12 @@ This package enables errors on all of the available flags except the following:
 | no-process-env | Disallow the use of `process.env` | `0` |
 | no-process-exit | Disallow the use of `process.exit()` | `0` |
 
+### Possible Errors
+
+| Flag | Description | Value |
+|------|-------------|--------|
+| valid-jsdoc | enforce valid JSDoc comments | `0` |
+
 ### Stylistic Issues
 
 | Flag | Description | Value |
