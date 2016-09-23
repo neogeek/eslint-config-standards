@@ -4,6 +4,7 @@
         "max-lines": 0,
         "object-curly-newline": 0,
         "one-var": 0,
-        "quotes": [2, "single"]
+        "quotes": [2, "single"],
+        "require-jsdoc": 0
     }
 }

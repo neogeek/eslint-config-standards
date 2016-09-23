@@ -1,5 +1,3 @@
 {
-    "rules": {
-        "valid-jsdoc": 0
-    }
+    "rules": {}
 }

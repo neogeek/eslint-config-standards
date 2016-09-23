@@ -30,12 +30,6 @@ This package enables errors on all of the available flags except the following:
 | no-process-env | Disallow the use of `process.env` | `0` |
 | no-process-exit | Disallow the use of `process.exit()` | `0` |
 
-### Possible Errors
-
-| Flag | Description | Value |
-|------|-------------|--------|
-| valid-jsdoc | enforce valid JSDoc comments | `0` |
-
 ### Stylistic Issues
 
 | Flag | Description | Value |
@@ -45,6 +39,7 @@ This package enables errors on all of the available flags except the following:
 | object-curly-newline | Enforce consistent line breaks inside braces | `0` |
 | one-var | Enforce variables to be declared either together or separately in functions | `0` |
 | quotes | Enforce the consistent use of either backticks, double, or single quotes | `[2, "single"]` |
+| require-jsdoc | require JSDoc comments | `0` |
 
 ## Install
 
