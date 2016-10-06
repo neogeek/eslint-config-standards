@@ -1,14 +1,29 @@
-[![Build Status](https://travis-ci.org/neogeek/eslint-config-standards.svg?branch=master)](https://travis-ci.org/neogeek/eslint-config-standards)
-[![devDependencies Status](https://david-dm.org/neogeek/eslint-config-standards/dev-status.svg)](https://david-dm.org/neogeek/eslint-config-standards?type=dev)
-[![NPM Version](https://img.shields.io/npm/v/@neogeek/eslint-config-standards.svg?style=flat)](https://www.npmjs.org/package/@neogeek/eslint-config-standards)
 
 # ESLint Config Standards
+
+[![NPM Version](https://img.shields.io/npm/v/@neogeek/eslint-config-standards.svg?style=flat)](https://www.npmjs.org/package/@neogeek/eslint-config-standards)
+
+## Install
+
+```bash
+$ npm install eslint @neogeek/eslint-config-standards --save-dev
+```
+
+Then create a `.eslintrc` file in the root of your project with the following contents:
+
+```json
+{
+  "extends": [
+    "@neogeek/eslint-config-standards"
+  ]
+}
+```
+
+## Configuration
 
 See http://eslint.org/docs/rules/ for more information.
 
 This package enables errors on all of the available flags except the following:
-
-## Flags
 
 ### Best Practices
 
@@ -41,21 +56,7 @@ This package enables errors on all of the available flags except the following:
 | quotes | Enforce the consistent use of either backticks, double, or single quotes | `[2, "single"]` |
 | require-jsdoc | require JSDoc comments | `0` |
 
-## Install
-
-```bash
-$ npm install eslint @neogeek/eslint-config-standards --save-dev
-```
-
-## Sample `.eslintrc` Configurations
-
-```json
-{
-  "extends": [
-    "@neogeek/eslint-config-standards"
-  ]
-}
-```
+## Extended `.eslintrc` Configuration
 
 ```json
 {
@@ -69,7 +70,7 @@ $ npm install eslint @neogeek/eslint-config-standards --save-dev
     "@neogeek/eslint-config-standards/.eslintrc-variables"
   ],
   "rules": {
-    "valid-jsdoc": 2
+    "require-jsdoc": 2
   }
 }
 ```
