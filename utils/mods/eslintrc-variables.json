@@ -1,5 +1,7 @@
 {
     "rules": {
-        "no-shadow": ["error", { "allow": ["err"] }]
+        "no-shadow": ["error", {
+            "allow": ["err"]
+        }]
     }
 }
