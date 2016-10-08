@@ -1,0 +1,14 @@
+{
+  "globals": {
+    "after": true,
+    "before": true,
+    "describe": true,
+    "it": true
+  },
+  "rules": {
+    "max-len": 0,
+    "max-statements": 0,
+    "no-console": 0,
+    "no-magic-numbers": 0
+  }
+}

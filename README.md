@@ -67,6 +67,7 @@ This package enables errors on all of the available flags except the following:
     "@neogeek/eslint-config-standards/.eslintrc-possible-errors",
     "@neogeek/eslint-config-standards/.eslintrc-strict-mode",
     "@neogeek/eslint-config-standards/.eslintrc-stylistic-issues",
+    "@neogeek/eslint-config-standards/.eslintrc-tests",
     "@neogeek/eslint-config-standards/.eslintrc-variables"
   ],
   "rules": {
