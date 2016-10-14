@@ -30,7 +30,7 @@ This package enables errors on all of the available flags except the following:
 | Flag | Description | Value |
 |------|-------------|--------|
 | dot-location | Enforce consistent newlines before and after dots | `0` |
-| no-magic-number | Disallow Magic Numbers | `[2, { "ignore": [-1, 0, 1] }]` |
+| no-magic-number | Disallow Magic Numbers | `[2, {"ignore": [-1, 0, 1]}]` |
 
 ### ECMAScript 6
 
@@ -55,6 +55,13 @@ This package enables errors on all of the available flags except the following:
 | one-var | Enforce variables to be declared either together or separately in functions | `0` |
 | quotes | Enforce the consistent use of either backticks, double, or single quotes | `[2, "single"]` |
 | require-jsdoc | require JSDoc comments | `0` |
+| spaced-comment | enforce consistent spacing after the `//` or `/*` in a comment | `["error", "always", {"block": {"markers": ["!"]}}]` |
+
+### Variables
+
+| Flag | Description | Value |
+|------|-------------|--------|
+| no-shadow | disallow variable declarations from shadowing variables declared in the outer scope | `["error", {"allow": ["err"]}] |
 
 ## Extended `.eslintrc` Configuration
 
