@@ -61,7 +61,7 @@ This package enables errors on all of the available flags except the following:
 
 | Flag | Description | Value |
 |------|-------------|--------|
-| no-shadow | disallow variable declarations from shadowing variables declared in the outer scope | `["error", {"allow": ["err"]}] |
+| no-shadow | disallow variable declarations from shadowing variables declared in the outer scope | `["error", {"allow": ["err"]}]` |
 
 ## Extended `.eslintrc` Configuration
 
@@ -74,11 +74,18 @@ This package enables errors on all of the available flags except the following:
     "@neogeek/eslint-config-standards/.eslintrc-possible-errors",
     "@neogeek/eslint-config-standards/.eslintrc-strict-mode",
     "@neogeek/eslint-config-standards/.eslintrc-stylistic-issues",
-    "@neogeek/eslint-config-standards/.eslintrc-tests",
     "@neogeek/eslint-config-standards/.eslintrc-variables"
   ],
   "rules": {
     "require-jsdoc": 2
   }
+}
+```
+
+```json
+{
+  "extends": [
+    "@neogeek/eslint-config-standards/.eslintrc-tests"
+  ]
 }
 ```
