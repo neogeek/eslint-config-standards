@@ -1,7 +1,8 @@
 {
     "rules": {
         "max-len": [1, 100, 4, {
-            "ignoreComments": true
+            "ignoreComments": true,
+            "ignoreTemplateLiterals": true
         }],
         "max-lines": 0,
         "object-curly-newline": 0,
