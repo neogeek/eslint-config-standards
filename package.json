@@ -6,11 +6,11 @@
   "license": "MIT",
   "devDependencies": {
     "cheerio": "0.22.0",
-    "eslint": "3.9.1",
+    "eslint": "3.10.2",
     "request": "2.78.0"
   },
   "peerDependencies": {
-    "eslint": "^3.9.x"
+    "eslint": "~3.10.2"
   },
   "scripts": {
     "test": "eslint index.js utils/update.js"
