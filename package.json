@@ -7,7 +7,7 @@
   "devDependencies": {
     "cheerio": "0.22.0",
     "eslint": "3.10.2",
-    "request": "2.78.0"
+    "request": "2.79.0"
   },
   "peerDependencies": {
     "eslint": "~3.10.2"
