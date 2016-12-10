@@ -1,5 +1,6 @@
 {
   "rules": {
+    "no-await-in-loop": 2,
     "no-cond-assign": 2,
     "no-console": 2,
     "no-constant-condition": 2,
