@@ -13,7 +13,7 @@
     "eslint": "~3.12.2"
   },
   "scripts": {
-    "test": "eslint index.js utils/update.js"
+    "test": "make test"
   },
   "keywords": [
     "eslint",
