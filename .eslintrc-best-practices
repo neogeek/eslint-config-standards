@@ -73,6 +73,7 @@
     "no-void": 2,
     "no-warning-comments": 2,
     "no-with": 2,
+    "prefer-promise-reject-errors": 2,
     "radix": 2,
     "require-await": 2,
     "vars-on-top": 2,
