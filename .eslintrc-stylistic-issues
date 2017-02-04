@@ -101,6 +101,7 @@
         }
       }
     ],
+    "template-tag-spacing": 2,
     "unicode-bom": 2,
     "wrap-regex": 2
   }
