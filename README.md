@@ -1,5 +1,7 @@
 # ESLint Config Standards
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/neogeek/eslint-config-standards.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/neogeek/eslint-config-standards.svg?branch=master)](https://travis-ci.org/neogeek/eslint-config-standards)
 [![NPM Version](https://img.shields.io/npm/v/@neogeek/eslint-config-standards.svg?style=flat)](https://www.npmjs.org/package/@neogeek/eslint-config-standards)
 
