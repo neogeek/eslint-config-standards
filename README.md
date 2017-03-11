@@ -63,6 +63,7 @@ This package enables errors on all of the available flags except the following:
 | Flag | Description | Value |
 |------|-------------|--------|
 | no-shadow | disallow variable declarations from shadowing variables declared in the outer scope | `["error", {"allow": ["err"]}]` |
+| no-unused-vars | disallow unused variables | `"no-unused-vars": ["warn", {"ignoreRestSiblings": true}]` |
 
 ## Extended `.eslintrc` Configuration
 

@@ -6,11 +6,11 @@
   "license": "MIT",
   "devDependencies": {
     "cheerio": "0.22.0",
-    "eslint": "3.16.1",
+    "eslint": "3.17.1",
     "request": "2.81.0"
   },
   "peerDependencies": {
-    "eslint": "~3.16.1"
+    "eslint": "~3.17.1"
   },
   "scripts": {
     "test": "make test"
