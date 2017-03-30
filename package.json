@@ -10,7 +10,7 @@
     "request": "2.81.0"
   },
   "peerDependencies": {
-    "eslint": "~3.17.1"
+    "eslint": "~3.18.0"
   },
   "scripts": {
     "test": "make test"
