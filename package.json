@@ -5,9 +5,9 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "cheerio": "0.22.0",
+    "cheerio": "^0.22.0",
     "eslint": "3.18.0",
-    "request": "2.81.0"
+    "request": "^2.81.0"
   },
   "peerDependencies": {
     "eslint": "~3.18.0"
