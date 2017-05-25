@@ -13,7 +13,9 @@
     "eslint": "~3.19.0"
   },
   "scripts": {
-    "test": "make test"
+    "test": "npm run lint && npm run update && git diff --exit-code || exit $?",
+    "lint": "eslint .",
+    "update": "node utils/update.js"
   },
   "keywords": [
     "eslint",
