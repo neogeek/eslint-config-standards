@@ -5,7 +5,6 @@
     "node": true
   },
   "extends": [
-    "eslint:recommended",
     ".eslintrc-best-practices",
     ".eslintrc-ecmascript-6",
     ".eslintrc-nodejs-and-commonjs",
