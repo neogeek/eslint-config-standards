@@ -5,7 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "cheerio": "^0.22.0",
+    "cheerio": "^1.0.0-rc.1",
     "eslint": "3.19.0",
     "request": "^2.81.0"
   },
