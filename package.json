@@ -10,7 +10,7 @@
     "request": "^2.81.0"
   },
   "peerDependencies": {
-    "eslint": "~3.19.0"
+    "eslint": "~4.0.0"
   },
   "scripts": {
     "test": "npm run lint && npm run update && git diff --exit-code || exit $?",
