@@ -55,9 +55,8 @@ request('http://eslint.org/docs/rules/', (err, res, body) => {
         '#stylistic-issues',
         '#variables'
     ].forEach(id => fs.writeFileSync(
-            `.eslintrc-${id.replace(/^#/, '')}`,
-            `${JSON.stringify(parseRulesFromTable($body, id), null, SPACE_SIZE)}\n`
-        )
-    );
+        `.eslintrc-${id.replace(/^#/, '')}`,
+        `${JSON.stringify(parseRulesFromTable($body, id), null, SPACE_SIZE)}\n`
+    ));
 
 });
