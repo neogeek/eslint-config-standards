@@ -5,6 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "babel-eslint": "^8.0.1",
     "eslint": "^4.10.0",
     "jsdom": "^11.1.0",
     "request": "^2.81.0"
