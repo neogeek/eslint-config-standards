@@ -11,8 +11,9 @@ const SPACE_SIZE = 2;
 
 const parseRulesFromTable = (doc, id) => {
 
-    const rules = [].slice.call(doc.querySelector(`#${id} ~ .rule-list`).querySelectorAll('td:nth-of-type(3)')).map(rule =>
-        rule.querySelector('a').textContent.trim());
+    const rules = [].slice
+        .call(doc.querySelector(`#${id} ~ .rule-list`).querySelectorAll('td:nth-of-type(3)'))
+        .map(rule => rule.querySelector('a').textContent.trim());
 
     const customRulesFile = path.join(__dirname, `./mods/eslintrc-${id.replace(/^#/, '')}.json`);
 
@@ -42,9 +43,10 @@ request('http://eslint.org/docs/rules/', (err, res, body) => {
         'strict-mode',
         'stylistic-issues',
         'variables'
-    ].forEach(id => fs.writeFileSync(
-        `.eslintrc-${id}`,
-        `${JSON.stringify(parseRulesFromTable(document, id), null, SPACE_SIZE)}\n`
-    ));
+    ].forEach(id =>
+        fs.writeFileSync(
+            `.eslintrc-${id}`,
+            `${JSON.stringify(parseRulesFromTable(document, id), null, SPACE_SIZE)}\n`
+        ));
 
 });
