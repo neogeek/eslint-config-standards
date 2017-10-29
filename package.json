@@ -5,12 +5,12 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "4.2.0",
+    "eslint": "^4.10.0",
     "jsdom": "^11.1.0",
     "request": "^2.81.0"
   },
   "peerDependencies": {
-    "eslint": "~4.2.0"
+    "eslint": "^4.10.0"
   },
   "scripts": {
     "test": "npm run lint && npm run update && git diff --exit-code || exit $?",
