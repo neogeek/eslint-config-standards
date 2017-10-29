@@ -12,6 +12,7 @@
     ".eslintrc-stylistic-issues",
     ".eslintrc-variables"
   ],
+  "parser": "babel-eslint",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true

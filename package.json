@@ -10,6 +10,7 @@
     "request": "^2.81.0"
   },
   "peerDependencies": {
+    "babel-eslint": "^8.0.1",
     "eslint": "^4.10.0"
   },
   "scripts": {

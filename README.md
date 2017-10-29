@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-$ npm install eslint @neogeek/eslint-config-standards --save-dev
+$ npm install eslint babel-eslint @neogeek/eslint-config-standards --save-dev
 ```
 
 Then create a `.eslintrc` file in the root of your project with the following contents:
