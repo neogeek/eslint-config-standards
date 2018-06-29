@@ -5,14 +5,14 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "babel-eslint": "^8.0.1",
-    "eslint": "^4.10.0",
-    "jsdom": "^11.1.0",
-    "request": "^2.81.0"
+    "babel-eslint": "^8.2.5",
+    "eslint": "^5.0.1",
+    "jsdom": "^11.11.0",
+    "request": "^2.87.0"
   },
   "peerDependencies": {
-    "babel-eslint": "^8.0.1",
-    "eslint": "^4.10.0"
+    "babel-eslint": "^8.2.5",
+    "eslint": "^5.0.1"
   },
   "scripts": {
     "test": "npm run lint && npm run update && git diff --exit-code || exit $?",
