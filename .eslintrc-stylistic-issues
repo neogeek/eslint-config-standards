@@ -21,6 +21,7 @@
     "id-blacklist": 2,
     "id-length": 2,
     "id-match": 2,
+    "implicit-arrow-linebreak": 2,
     "indent": 2,
     "jsx-quotes": 2,
     "key-spacing": 2,
@@ -40,6 +41,7 @@
       }
     ],
     "max-lines": 0,
+    "max-lines-per-function": 2,
     "max-nested-callbacks": 2,
     "max-params": 2,
     "max-statements": 2,
@@ -79,6 +81,7 @@
     "operator-linebreak": 2,
     "padded-blocks": 2,
     "padding-line-between-statements": 2,
+    "prefer-object-spread": 2,
     "quote-props": 2,
     "quotes": [
       2,
