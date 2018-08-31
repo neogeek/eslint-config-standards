@@ -19,7 +19,7 @@ const parseRulesFromTable = (doc, id) => {
 
     const customRulesFile = path.join(
         __dirname,
-        `./mods/eslintrc-${id.replace(/^#/, '')}.json`
+        `./mods/eslintrc-${id.replace(/^#/u, '')}.json`
     );
 
     const customRules = require(customRulesFile).rules;
