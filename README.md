@@ -91,3 +91,30 @@ This package enables errors on all of the available flags except the following:
   ]
 }
 ```
+
+## Prettier Config
+
+Create a `.prettierrc` file with the following contents:
+
+```json
+{
+  "printWidth": 80,
+  "tabWidth": 4
+}
+```
+
+Install the [prettier-eslint-cli](https://github.com/prettier/prettier-eslint-cli).
+
+```bash
+$ npm install prettier-eslint-cli --save-dev
+```
+
+Add NPM script for automation.
+
+```json
+{
+  "scripts": {
+    "prettier": "prettier-eslint --eslint-config-path .eslintrc --write \"src/**/*.js\""
+  }
+}
+```
