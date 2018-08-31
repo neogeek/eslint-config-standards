@@ -18,7 +18,7 @@
   "scripts": {
     "test": "npm run lint && npm run update && git diff --exit-code || exit $?",
     "lint": "eslint .",
-    "prettier": "prettier-eslint --eslint-config-path .eslintrc --write \"utils/**/*.js\"",
+    "prettier": "prettier-eslint --eslint-config-path .eslintrc --write \"utils/**/*.js\" \"index.js\"",
     "update": "node utils/update.js"
   },
   "keywords": [
