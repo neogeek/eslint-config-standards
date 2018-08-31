@@ -50,6 +50,7 @@ This package enables errors on all of the available flags except the following:
 
 | Flag | Description | Value |
 |------|-------------|--------|
+| implicit-arrow-linebreak | Enforce the location of arrow function bodies with implicit returns | `0` |
 | max-len | Enforce a maximum line length | `[1, 80, 4, {"ignoreComments": true, "ignoreTemplateLiterals": true}]` |
 | max-lines | Enforce a maximum file length | `0` |
 | object-curly-newline | Enforce consistent line breaks inside braces | `0` |

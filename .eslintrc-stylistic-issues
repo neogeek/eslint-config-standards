@@ -21,7 +21,7 @@
     "id-blacklist": 2,
     "id-length": 2,
     "id-match": 2,
-    "implicit-arrow-linebreak": 2,
+    "implicit-arrow-linebreak": 0,
     "indent": 2,
     "jsx-quotes": 2,
     "key-spacing": 2,
