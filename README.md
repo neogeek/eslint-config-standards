@@ -50,7 +50,7 @@ This package enables errors on all of the available flags except the following:
 
 | Flag | Description | Value |
 |------|-------------|--------|
-| max-len | Enforce a maximum line length | `[1, 100, 4, {"ignoreComments": true, "ignoreTemplateLiterals": true}]` |
+| max-len | Enforce a maximum line length | `[1, 80, 4, {"ignoreComments": true, "ignoreTemplateLiterals": true}]` |
 | max-lines | Enforce a maximum file length | `0` |
 | object-curly-newline | Enforce consistent line breaks inside braces | `0` |
 | one-var | Enforce variables to be declared either together or separately in functions | `0` |
