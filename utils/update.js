@@ -12,15 +12,24 @@ const SPACE_SIZE = 2;
 const parseRulesFromTable = (doc, id) => {
 
     const rules = [].slice
-        .call(doc.querySelector(`#${id} ~ .rule-list`).querySelectorAll('td:nth-of-type(3)'))
+        .call(doc
+            .querySelector(`#${id} ~ .rule-list`)
+            .querySelectorAll('td:nth-of-type(3)'))
         .map(rule => rule.querySelector('a').textContent.trim());
 
-    const customRulesFile = path.join(__dirname, `./mods/eslintrc-${id.replace(/^#/, '')}.json`);
+    const customRulesFile = path.join(
+        __dirname,
+        `./mods/eslintrc-${id.replace(/^#/, '')}.json`
+    );
 
     const customRules = require(customRulesFile).rules;
 
     return {
-        'rules': Object.assign({}, ...rules.map(rule => ({[rule]: 2})), customRules)
+        'rules': Object.assign(
+            {},
+            ...rules.map(rule => ({[rule]: 2})),
+            customRules
+        )
     };
 
 };
@@ -45,7 +54,11 @@ request('http://eslint.org/docs/rules/', (err, res, body) => {
         'variables'
     ].forEach(id => fs.writeFileSync(
         `.eslintrc-${id}`,
-        `${JSON.stringify(parseRulesFromTable(document, id), null, SPACE_SIZE)}\n`
+        `${JSON.stringify(
+            parseRulesFromTable(document, id),
+            null,
+            SPACE_SIZE
+        )}\n`
     ));
 
 });
