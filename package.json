@@ -6,7 +6,7 @@
   "license": "MIT",
   "devDependencies": {
     "babel-eslint": "9.0.0",
-    "eslint": "5.4.0",
+    "eslint": "5.12.1",
     "jsdom": "12.0.0",
     "prettier-eslint-cli": "4.7.1",
     "request": "2.88.0"
