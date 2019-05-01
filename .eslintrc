@@ -1,23 +1,23 @@
 {
-  "env": {
-    "browser": true,
-    "es6": true,
-    "node": true
-  },
-  "extends": [
-    ".eslintrc-best-practices",
-    ".eslintrc-ecmascript-6",
-    ".eslintrc-nodejs-and-commonjs",
-    ".eslintrc-possible-errors",
-    ".eslintrc-stylistic-issues",
-    ".eslintrc-variables"
-  ],
-  "parser": "babel-eslint",
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
     },
-    "ecmaVersion": 6,
-    "sourceType": "module"
-  }
+    "extends": [
+        ".eslintrc-best-practices",
+        ".eslintrc-ecmascript-6",
+        ".eslintrc-nodejs-and-commonjs",
+        ".eslintrc-possible-errors",
+        ".eslintrc-stylistic-issues",
+        ".eslintrc-variables"
+    ],
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    }
 }

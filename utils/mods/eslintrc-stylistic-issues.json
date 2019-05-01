@@ -1,18 +1,27 @@
 {
-    "rules": {
-        "implicit-arrow-linebreak": 0,
-        "max-len": [1, 80, 4, {
-            "ignoreComments": true,
-            "ignoreTemplateLiterals": true
-        }],
-        "max-lines": 0,
-        "object-curly-newline": 0,
-        "one-var": 0,
-        "quotes": [2, "single"],
-        "spaced-comment": ["error", "always", {
-            "block": {
-                "markers": ["!"]
-            }
-        }]
-    }
+  "rules": {
+    "implicit-arrow-linebreak": 0,
+    "max-len": [
+      1,
+      80,
+      4,
+      {
+        "ignoreComments": true,
+        "ignoreTemplateLiterals": true
+      }
+    ],
+    "max-lines": 0,
+    "object-curly-newline": 0,
+    "one-var": 0,
+    "quotes": [2, "single"],
+    "spaced-comment": [
+      "error",
+      "always",
+      {
+        "block": {
+          "markers": ["!"]
+        }
+      }
+    ]
+  }
 }

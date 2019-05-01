@@ -1,4 +1,14 @@
 {
   "printWidth": 80,
-  "tabWidth": 4
+  "tabWidth": 4,
+  "requirePragma": true,
+  "overrides": [
+    {
+      "files": ["**/*.json", ".*rc"],
+      "options": {
+        "requirePragma": false,
+        "tabWidth": 2
+      }
+    }
+  ]
 }

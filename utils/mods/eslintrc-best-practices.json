@@ -1,8 +1,11 @@
 {
-    "rules": {
-        "dot-location": 0,
-        "no-magic-numbers": [2, {
-            "ignore": [-1, 0, 1]
-        }]
-    }
+  "rules": {
+    "dot-location": 0,
+    "no-magic-numbers": [
+      2,
+      {
+        "ignore": [-1, 0, 1]
+      }
+    ]
+  }
 }
