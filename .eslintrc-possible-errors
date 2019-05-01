@@ -35,7 +35,6 @@
     "no-unsafe-negation": 2,
     "require-atomic-updates": 2,
     "use-isnan": 2,
-    "valid-jsdoc": 2,
     "valid-typeof": 2
   }
 }
