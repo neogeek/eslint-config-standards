@@ -3,7 +3,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const loadConfigFile = filename => JSON.parse(fs.readFileSync(path.join(__dirname, filename), 'utf8'));
+const loadConfigFile = filename =>
+    JSON.parse(fs.readFileSync(path.join(__dirname, filename), 'utf8'));
 
 module.exports = {
     'env': {

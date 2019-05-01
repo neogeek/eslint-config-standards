@@ -52,13 +52,14 @@ request('http://eslint.org/docs/rules/', (err, res, body) => {
         'strict-mode',
         'stylistic-issues',
         'variables'
-    ].forEach(id => fs.writeFileSync(
-        `.eslintrc-${id}`,
-        `${JSON.stringify(
-            parseRulesFromTable(document, id),
-            null,
-            SPACE_SIZE
-        )}\n`
-    ));
+    ].forEach(id =>
+        fs.writeFileSync(
+            `.eslintrc-${id}`,
+            `${JSON.stringify(
+                parseRulesFromTable(document, id),
+                null,
+                SPACE_SIZE
+            )}\n`
+        ));
 
 });
