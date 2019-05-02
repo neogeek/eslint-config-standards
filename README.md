@@ -71,6 +71,7 @@ This package enables errors on all of the available flags except the following:
         "@neogeek/eslint-config-standards/.eslintrc-ecmascript-6",
         "@neogeek/eslint-config-standards/.eslintrc-nodejs-and-commonjs",
         "@neogeek/eslint-config-standards/.eslintrc-possible-errors",
+        "@neogeek/eslint-config-standards/.eslintrc-react",
         "@neogeek/eslint-config-standards/.eslintrc-strict-mode",
         "@neogeek/eslint-config-standards/.eslintrc-stylistic-issues",
         "@neogeek/eslint-config-standards/.eslintrc-variables"
