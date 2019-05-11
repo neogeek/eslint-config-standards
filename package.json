@@ -12,8 +12,8 @@
     "request": "2.88.0"
   },
   "peerDependencies": {
-    "babel-eslint": "10.0.1",
-    "eslint": "5.16.0"
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0"
   },
   "scripts": {
     "test": "npm run lint && npm run update && git diff --exit-code || exit $?",
