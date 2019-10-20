@@ -17,6 +17,7 @@
     "func-name-matching": 2,
     "func-names": 2,
     "func-style": 2,
+    "function-call-argument-newline": 2,
     "function-paren-newline": 2,
     "id-blacklist": 2,
     "id-length": 2,
