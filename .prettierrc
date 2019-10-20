@@ -1,12 +1,13 @@
 {
   "printWidth": 80,
+  "semi": true,
+  "singleQuote": true,
   "tabWidth": 4,
-  "requirePragma": true,
+  "useTabs": false,
   "overrides": [
     {
       "files": ["**/*.json", ".*rc"],
       "options": {
-        "requirePragma": false,
         "tabWidth": 2
       }
     }
