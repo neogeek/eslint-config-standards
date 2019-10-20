@@ -19,7 +19,10 @@ const parseRulesFromTable = (doc, id) => {
 
     const customRulesFile = path.join(
         __dirname,
-        `./mods/eslintrc-${id.replace(/^#/u, '')}.json`
+        `./mods/eslintrc-${id.replace(
+            /^#/u,
+            ''
+        )}.json`
     );
 
     const customRules = require(customRulesFile).rules;
@@ -34,32 +37,38 @@ const parseRulesFromTable = (doc, id) => {
 
 };
 
-request('http://eslint.org/docs/rules/', (err, res, body) => {
+request(
+    'http://eslint.org/docs/rules/',
+    (err, res, body) => {
 
-    if (err) {
+        if (err) {
 
-        return new Error(err);
+            return new Error(err);
+
+        }
+
+        const {document} = new JSDOM(body).window;
+
+        return [
+            'best-practices',
+            'ecmascript-6',
+            'nodejs-and-commonjs',
+            'possible-errors',
+            'strict-mode',
+            'stylistic-issues',
+            'variables'
+        ].forEach(id =>
+            fs.writeFileSync(
+                `.eslintrc-${id}`,
+                `${JSON.stringify(
+                    parseRulesFromTable(
+                        document,
+                        id
+                    ),
+                    null,
+                    SPACE_SIZE
+                )}\n`
+            ));
 
     }
-
-    const {document} = new JSDOM(body).window;
-
-    return [
-        'best-practices',
-        'ecmascript-6',
-        'nodejs-and-commonjs',
-        'possible-errors',
-        'strict-mode',
-        'stylistic-issues',
-        'variables'
-    ].forEach(id =>
-        fs.writeFileSync(
-            `.eslintrc-${id}`,
-            `${JSON.stringify(
-                parseRulesFromTable(document, id),
-                null,
-                SPACE_SIZE
-            )}\n`
-        ));
-
-});
+);
