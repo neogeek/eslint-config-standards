@@ -3,7 +3,9 @@
     "after": true,
     "before": true,
     "describe": true,
-    "it": true
+    "expect": true,
+    "it": true,
+    "test": true,
   },
   "rules": {
     "max-len": 0,
