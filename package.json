@@ -13,7 +13,7 @@
   },
   "peerDependencies": {
     "babel-eslint": "^10.0.3",
-    "eslint": "^6.5.1"
+    "eslint": "^6.6.0"
   },
   "scripts": {
     "test": "npm run lint && npm run update && git diff --exit-code || exit $?",
