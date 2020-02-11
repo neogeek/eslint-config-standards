@@ -9,7 +9,7 @@
     "eslint": "6.5.1",
     "jsdom": "15.2.0",
     "prettier-eslint-cli": "5.0.0",
-    "request": "2.88.0"
+    "request": "2.88.2"
   },
   "peerDependencies": {
     "babel-eslint": "^10.0.3",
