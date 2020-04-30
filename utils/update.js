@@ -44,7 +44,6 @@ request('http://eslint.org/docs/rules/', (err, res, body) => {
     return [
         'best-practices',
         'ecmascript-6',
-        'nodejs-and-commonjs',
         'possible-errors',
         'strict-mode',
         'stylistic-issues',

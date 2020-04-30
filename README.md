@@ -36,13 +36,6 @@ This package enables errors on all of the available flags except the following:
 | ------------ | --------------------------------------------------- | ------------------------ |
 | arrow-parens | require parentheses around arrow function arguments | `["error", "as-needed"]` |
 
-### Node.js and CommonJS
-
-| Flag            | Description                          | Value |
-| --------------- | ------------------------------------ | ----- |
-| no-process-env  | Disallow the use of `process.env`    | `0`   |
-| no-process-exit | Disallow the use of `process.exit()` | `0`   |
-
 ### Stylistic Issues
 
 | Flag                     | Description                                                                 | Value                                                                  |
@@ -69,7 +62,6 @@ This package enables errors on all of the available flags except the following:
     "extends": [
         "@neogeek/eslint-config-standards/.eslintrc-best-practices",
         "@neogeek/eslint-config-standards/.eslintrc-ecmascript-6",
-        "@neogeek/eslint-config-standards/.eslintrc-nodejs-and-commonjs",
         "@neogeek/eslint-config-standards/.eslintrc-possible-errors",
         "@neogeek/eslint-config-standards/.eslintrc-react",
         "@neogeek/eslint-config-standards/.eslintrc-strict-mode",
