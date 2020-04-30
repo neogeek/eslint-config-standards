@@ -82,6 +82,7 @@
     "operator-linebreak": 2,
     "padded-blocks": 2,
     "padding-line-between-statements": 2,
+    "prefer-exponentiation-operator": 2,
     "prefer-object-spread": 2,
     "quote-props": 2,
     "quotes": [
