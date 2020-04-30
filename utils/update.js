@@ -9,10 +9,10 @@ const request = require('request');
 
 const SPACE_SIZE = 2;
 
-const parseRulesFromTable = (doc, id) => {
+const parseRulesFromTable = (document, id) => {
 
     const rules = [].slice
-        .call(doc
+        .call(document
             .querySelector(`#${id} ~ .rule-list`)
             .querySelectorAll('td:nth-of-type(3)'))
         .map(rule => rule.querySelector('a').textContent.trim());
