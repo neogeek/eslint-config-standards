@@ -39,7 +39,13 @@ request('http://eslint.org/docs/rules/', (err, res, body) => {
         return new Error(err);
     }
 
-    const { document } = new JSDOM(body).window;
+    const { document } = new JSDOM(
+        body.replace(
+            /<h2>(?<id>[^<]+)<\/h2>/gu,
+            (matches, id) =>
+                `<h2 id="${id.toLowerCase().replace(/ /gu, '-')}">${id}</h2>`
+        )
+    ).window;
 
     return [
         'best-practices',
