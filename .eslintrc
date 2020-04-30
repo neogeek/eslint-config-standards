@@ -7,7 +7,6 @@
   "extends": [
     ".eslintrc-best-practices",
     ".eslintrc-ecmascript-6",
-    ".eslintrc-nodejs-and-commonjs",
     ".eslintrc-possible-errors",
     ".eslintrc-stylistic-issues",
     ".eslintrc-variables"
