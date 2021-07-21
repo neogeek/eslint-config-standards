@@ -29,7 +29,6 @@ module.exports = {
     'rules': {
         ...loadConfigFile('.eslintrc-best-practices').rules,
         ...loadConfigFile('.eslintrc-ecmascript-6').rules,
-        ...loadConfigFile('.eslintrc-nodejs-and-commonjs').rules,
         ...loadConfigFile('.eslintrc-possible-errors').rules,
         ...loadConfigFile('.eslintrc-stylistic-issues').rules,
         ...loadConfigFile('.eslintrc-variables').rules
