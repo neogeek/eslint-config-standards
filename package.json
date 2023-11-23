@@ -16,7 +16,8 @@
     "test": "npm run lint && npm run update && git diff --exit-code || exit $?",
     "lint": "eslint .",
     "prettier": "prettier-eslint --write \"utils/**/*.js\" \"index.js\"",
-    "update": "node utils/update.js"
+    "update": "node utils/update.js",
+    "combine": "node utils/combine.js"
   },
   "keywords": [
     "eslint",
