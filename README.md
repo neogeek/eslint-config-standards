@@ -1,5 +1,6 @@
 # ESLint Config Standards
 
+[![Tests](https://github.com/neogeek/eslint-config-standards/actions/workflows/test.workflow.yml/badge.svg)](https://github.com/neogeek/eslint-config-standards/actions/workflows/test.workflow.yml)
 [![NPM Version](https://img.shields.io/npm/v/@neogeek/eslint-config-standards.svg?style=flat)](https://www.npmjs.org/package/@neogeek/eslint-config-standards)
 
 ## Install
