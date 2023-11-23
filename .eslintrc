@@ -5,18 +5,12 @@
     "node": true
   },
   "extends": [
-    ".eslintrc-best-practices",
-    ".eslintrc-ecmascript-6",
-    ".eslintrc-possible-errors",
-    ".eslintrc-stylistic-issues",
-    ".eslintrc-variables"
+    ".eslintrc-layout-formatting",
+    ".eslintrc-possible-problems",
+    ".eslintrc-suggestions"
   ],
-  "parser": "babel-eslint",
   "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 6,
+    "ecmaVersion": "latest",
     "sourceType": "module"
   }
 }
