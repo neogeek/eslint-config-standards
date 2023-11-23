@@ -1,8 +1,11 @@
-const fs = require('fs');
+const { readFileSync } = require('fs');
 const path = require('path');
 
+/**
+ * @param {string} filename
+ */
 const loadConfigFile = filename =>
-  JSON.parse(fs.readFileSync(path.join(__dirname, filename), 'utf8'));
+  JSON.parse(readFileSync(path.join(__dirname, filename), 'utf8'));
 
 const rules = {
   ...loadConfigFile('.eslintrc-layout-formatting').rules,
