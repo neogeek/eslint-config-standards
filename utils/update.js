@@ -1,67 +1,50 @@
-/* eslint global-require: 0 */
-/* eslint no-sync: 0 */
-
-const fs = require('fs');
-const path = require('path');
+const { writeFileSync, readFileSync } = require('fs');
 
 const { JSDOM } = require('jsdom');
-const request = require('request');
 
-const SPACE_SIZE = 2;
+fetch('http://eslint.org/docs/rules/')
+  .then(res => res.text())
+  .then(html => {
+    const { document } = new JSDOM(html).window;
 
-const parseRulesFromTable = (document, id) => {
-    const rules = [].slice
-        .call(
-            document
-                .querySelector(`#${id} ~ .rule-list`)
-                .querySelectorAll('td:nth-of-type(3)')
-        )
-        .map(rule => rule.querySelector('a').textContent.trim());
+    let currentKey = null;
 
-    const customRulesFile = path.join(
-        __dirname,
-        `./mods/eslintrc-${id.replace(/^#/u, '')}.json`
-    );
+    const rules = Array.from(
+      document.querySelectorAll(
+        '.docs-main__content > h2, .docs-main__content > .rule:not(.rule--deprecated):not(.rule--removed) .rule__name'
+      )
+    ).reduce((acc, curr) => {
+      if (curr.nodeName === 'H2') {
+        currentKey = curr.id;
 
-    const customRules = require(customRulesFile).rules;
+        acc[currentKey] = [];
+      } else {
+        acc[currentKey].push(curr.textContent);
+      }
 
-    return {
-        rules: Object.assign(
-            {},
-            ...rules.map(rule => ({ [rule]: 2 })),
-            customRules
-        )
-    };
-};
+      return acc;
+    }, {});
 
-request('http://eslint.org/docs/rules/', (err, res, body) => {
-    if (err) {
-        return new Error(err);
-    }
+    Object.keys(rules).forEach(ruleKey => {
+      if (rules[ruleKey].length > 0) {
+        const path = `.eslintrc-${ruleKey.replace(/[^a-z0-9]+/iu, '-')}`;
 
-    const { document } = new JSDOM(
-        body.replace(
-            /<h2>(?<id>[^<]+)<\/h2>/gu,
-            (matches, id) =>
-                `<h2 id="${id.toLowerCase().replace(/ /gu, '-')}">${id}</h2>`
-        )
-    ).window;
-
-    return [
-        'best-practices',
-        'ecmascript-6',
-        'possible-errors',
-        'strict-mode',
-        'stylistic-issues',
-        'variables'
-    ].forEach(id =>
-        fs.writeFileSync(
-            `.eslintrc-${id}`,
-            `${JSON.stringify(
-                parseRulesFromTable(document, id),
-                null,
-                SPACE_SIZE
-            )}\n`
-        )
-    );
-});
+        writeFileSync(
+          path,
+          `${JSON.stringify(
+            {
+              rules: Object.assign(
+                {},
+                ...rules[ruleKey].map(rule => ({ [rule]: 'error' })),
+                JSON.parse(readFileSync(`./utils/mods/${path}.json`, 'utf8'))
+                  .rules
+              )
+            },
+            null,
+            // eslint-disable-next-line no-magic-numbers
+            2
+          )}\n`
+        );
+      }
+    });
+  });

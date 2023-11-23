@@ -1,0 +1,6 @@
+{
+  "rules": {
+    "line-comment-position": "error",
+    "unicode-bom": "error"
+  }
+}

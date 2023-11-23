@@ -1,11 +1,12 @@
 {
   "rules": {
-    "dot-location": 0,
+    "max-lines": 0,
     "no-magic-numbers": [
-      2,
+      "error",
       {
         "ignore": [-1, 0, 1]
       }
-    ]
+    ],
+    "one-var": 0
   }
 }

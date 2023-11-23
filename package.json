@@ -5,20 +5,17 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "babel-eslint": "10.1.0",
-    "eslint": "7.31.0",
-    "jsdom": "16.6.0",
-    "prettier-eslint-cli": "5.0.1",
-    "request": "2.88.2"
+    "eslint": "8.54.0",
+    "jsdom": "22.1.0",
+    "prettier-eslint-cli": "8.0.1"
   },
   "peerDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.31.0"
+    "eslint": "^8.54.0"
   },
   "scripts": {
     "test": "npm run lint && npm run update && git diff --exit-code || exit $?",
     "lint": "eslint .",
-    "prettier": "prettier-eslint --eslint-config-path .eslintrc --write \"utils/**/*.js\" \"index.js\"",
+    "prettier": "prettier-eslint --write \"utils/**/*.js\" \"index.js\"",
     "update": "node utils/update.js"
   },
   "keywords": [
