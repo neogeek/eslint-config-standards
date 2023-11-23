@@ -4,6 +4,10 @@
 
 [Full Changelog](https://github.com/neogeek/eslint-config-standards/compare/v5.0.0...HEAD)
 
+- [feat] Added target for combining all rules. [#56](https://github.com/neogeek/eslint-config-standards/pull/56)
+- [hotfix] Moved utility into file. [#55](https://github.com/neogeek/eslint-config-standards/pull/55)
+- [hotfix] Changed import. [#54](https://github.com/neogeek/eslint-config-standards/pull/54)
+- [hotfix] Sort rules. [#53](https://github.com/neogeek/eslint-config-standards/pull/53)
 - [hotfix] Updated flags. [#52](https://github.com/neogeek/eslint-config-standards/pull/52)
 - [hotfix] Fixed invalid override. [#51](https://github.com/neogeek/eslint-config-standards/pull/51)
 - [hotfix] Updated eslint. [#50](https://github.com/neogeek/eslint-config-standards/pull/50)
