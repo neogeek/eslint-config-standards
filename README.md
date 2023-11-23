@@ -31,16 +31,18 @@ No changes
 
 | Flag           | Description               | Value                                                      |
 | -------------- | ------------------------- | ---------------------------------------------------------- |
-| no-unused-vars | disallow unused variables | `"no-unused-vars": ["warn", {"ignoreRestSiblings": true}]` |
+| no-unused-vars | Disallow unused variables | `"no-unused-vars": ["warn", {"ignoreRestSiblings": true}]` |
 
 ### Suggestions
 
-| Flag            | Description                                                                         | Value                           |
-| --------------- | ----------------------------------------------------------------------------------- | ------------------------------- |
-| max-lines       | Enforce a maximum file length                                                       | `0`                             |
-| no-magic-number | Disallow Magic Numbers                                                              | `[2, {"ignore": [-1, 0, 1]}]`   |
-| no-shadow       | disallow variable declarations from shadowing variables declared in the outer scope | `["error", {"allow": ["err"]}]` |
-| one-var         | Enforce variables to be declared either together or separately in functions         | `0`                             |
+| Flag            | Description                                                                         | Value                               |
+| --------------- | ----------------------------------------------------------------------------------- | ----------------------------------- |
+| id-length       | Enforce minimum and maximum identifier lengths                                      | `off`                               |
+| max-lines       | Enforce a maximum number of lines per file                                          | `off`                               |
+| max-statements  | Enforce a maximum number of statements allowed in function blocks                   | `off`                               |
+| no-magic-number | Disallow magic numbers                                                              | `["error", {"ignore": [-1, 0, 1]}]` |
+| no-shadow       | Disallow variable declarations from shadowing variables declared in the outer scope | `["error", {"allow": ["err"]}]`     |
+| one-var         | Enforce variables to be declared either together or separately in functions         | `off`                               |
 
 ## Extended `.eslintrc` Configuration
 

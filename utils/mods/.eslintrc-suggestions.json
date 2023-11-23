@@ -1,6 +1,8 @@
 {
   "rules": {
-    "max-lines": 0,
+    "id-length": "off",
+    "max-lines": "off",
+    "max-statements": "off",
     "no-magic-numbers": [
       "error",
       {
@@ -13,6 +15,6 @@
         "allow": ["err"]
       }
     ],
-    "one-var": 0
+    "one-var": "off"
   }
 }
