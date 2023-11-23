@@ -1,11 +1,5 @@
 {
   "rules": {
-    "no-shadow": [
-      "error",
-      {
-        "allow": ["err"]
-      }
-    ],
     "no-unused-vars": [
       "warn",
       {

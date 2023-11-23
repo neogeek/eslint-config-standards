@@ -62,14 +62,6 @@
     "no-useless-backreference": "error",
     "require-atomic-updates": "error",
     "use-isnan": "error",
-    "valid-typeof": "error",
-    "no-shadow": [
-      "error",
-      {
-        "allow": [
-          "err"
-        ]
-      }
-    ]
+    "valid-typeof": "error"
   }
 }

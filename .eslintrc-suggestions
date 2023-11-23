@@ -99,7 +99,14 @@
     "no-return-assign": "error",
     "no-script-url": "error",
     "no-sequences": "error",
-    "no-shadow": "error",
+    "no-shadow": [
+      "error",
+      {
+        "allow": [
+          "err"
+        ]
+      }
+    ],
     "no-shadow-restricted-names": "error",
     "no-ternary": "error",
     "no-throw-literal": "error",
